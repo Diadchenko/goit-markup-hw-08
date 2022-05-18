@@ -1,0 +1,13 @@
+:root {
+  --hero-title-color: #ffffff;
+  --work-title-color: #212121;
+  --team-title-color: #212121;
+  --hero-btn-color: #ffffff;
+  --portfolio-btn-color: #212121;
+}
+
+@mixin font($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
