@@ -1,24 +1,58 @@
 .client-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  @include font(700, 28px, 1.17);
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include desktop {
+    @include font(700, 36px, 1.16);
+    margin-bottom: 50px;
+  }
 }
 
 .client-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  @include desktop {
+    flex-wrap: nowrap;
+  }
 }
 
-.client-item + .client-item {
-  margin-left: 30px;
+.client-item {
+  @include mobile {
+    flex-basis: calc((100% - 30px) / 2);
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include tablet {
+    flex-basis: calc((100% - 60px) / 3);
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include desktop {
+    width: 170px;
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .client-item-link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -36,6 +70,9 @@
   &:focus {
     border: 1px solid #2196f3;
     color: #2196f3;
+  }
+  @include desktop {
+    width: 170px;
   }
 }
 
