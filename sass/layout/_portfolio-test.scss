@@ -1,28 +1,28 @@
-.portfolio-btn-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.portfolio-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
 
-  margin-bottom: 40px;
-  @include tablet {
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-bottom: 30px;
+  &:nth-child(3n) {
+    margin-right: 0;
   }
-  @include desktop {
-    margin-bottom: 50px;
-  }
-}
 
-.portfolio-btn-item {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
-  margin-bottom: 15px;
-  @include tablet {
+  &:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
 }
+
+.portfolio-padding {
+  padding: 20px 24px;
+
+  background: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+///////////////////
 
 .btn-item {
   font-family: "Roboto";
@@ -51,42 +51,6 @@
   }
 }
 
-.portfolio-list {
-  @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-}
-
-.portfolio-item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-  @include tablet {
-    flex-basis: calc((100% - 30px) / 2);
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
-    &:not(:nth-last-child(-n + 2)) {
-      margin-bottom: 30px;
-    }
-  }
-  @include desktop {
-    flex-basis: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
-  }
-}
-
 .portfolio-item-title {
   font-weight: 700;
   font-size: 18px;
@@ -102,6 +66,49 @@
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.portfolio-btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-btn-item {
+  margin-bottom: 50px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-padding {
+  padding: 20px 24px;
+
+  background: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .portfolio-link {
@@ -121,15 +128,6 @@
 .portfolio-wrap {
   position: relative;
   overflow: hidden;
-  img {
-    width: 100%;
-    @include tablet {
-      width: 354px;
-    }
-    @include desktop {
-      width: 370px;
-    }
-  }
 }
 
 .portfolio-top-text {
