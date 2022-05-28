@@ -55,7 +55,6 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
   }
 }
 
@@ -64,14 +63,20 @@
     margin-bottom: 30px;
   }
   @include tablet {
-    flex-basis: calc((100% - 30px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
     &:nth-child(odd) {
       margin-right: 30px;
     }
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 30px;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      &:first-child .portfolio-padding {
+        padding-bottom: 54px;
+      }
+    }
   }
+
   @include desktop {
     flex-basis: calc((100% - 60px) / 3);
     margin-right: 30px;
@@ -156,4 +161,14 @@
 
 .portfolio-item:hover .portfolio-top-text {
   transform: translateY(0%);
+}
+
+.portfolio-padding {
+  padding: 20px 24px;
+
+  background: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  box-sizing: border-box;
 }

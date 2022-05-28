@@ -187,6 +187,10 @@
           <ul class="work__list list">
             <li class="work__item">
               <img
+                srcset="
+                  ./images/desktop-work-1x.jpg 1x,
+                  ./images/desktop-work-2x.jpg 2x
+                "
                 src="./images/img-1.jpg"
                 alt="Чем мы занимаемся-1"
                 width="370"
@@ -195,6 +199,10 @@
             </li>
             <li class="work__item">
               <img
+                srcset="
+                  ./images/desktop-work-2-1x.jpg 1x,
+                  ./images/desktop-work-2-2x.jpg 2x
+                "
                 src="./images/img-2.jpg"
                 alt="Чем мы занимаемся-2"
                 width="370"
@@ -203,6 +211,10 @@
             </li>
             <li class="work__item">
               <img
+                srcset="
+                  ./images/desktop-work-3-1x.jpg 1x,
+                  ./images/desktop-work-3-2x.jpg 2x
+                "
                 src="./images/img-3.jpg"
                 alt="Чем мы занимаемся-3"
                 width="370"
@@ -217,7 +229,30 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/img-4.jpg" alt="Наша команда-1" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/dekstop-team-1-1x.jpg 1x,
+                    ./images/dekstop-team-1-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-team-1-1x.jpg 1x,
+                    ./images/tablet-team-1-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobil-team-1-1x.jpg 1x,
+                    ./images/mobil-team-1-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/img-4.jpg" alt="Наша команда-1" />
+              </picture>
               <div class="team-padding">
                 <h3 class="team-item-title">Игорь Демьяненко</h3>
                 <p lang="en" class="team-text">Product Designer</p>
@@ -254,7 +289,31 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img-5.jpg" alt="Наша команда-2" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/dekstop-team-2-1x.jpg 1x,
+                    ./images/dekstop-team-2-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-team-2-1x.jpg 1x,
+                    ./images/tablet-team-2-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobil-team-2-1x.jpg 1x,
+                    ./images/mobil-team-2-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/img-5.jpg" alt="Наша команда-2" />
+              </picture>
+
               <div class="team-padding">
                 <h3 class="team-item-title">Ольга Репина</h3>
                 <p lang="en" class="team-text">Frontend Developer</p>
@@ -291,7 +350,30 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img-6.jpg" alt="Наша команда-3" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/dekstop-team-3-1x.jpg 1x,
+                    ./images/dekstop-team-3-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-team-3-1x.jpg 1x,
+                    ./images/tablet-team-3-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobil-team-3-1x.jpg 1x,
+                    ./images/mobil-team-3-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/img-6.jpg" alt="Наша команда-3" />
+              </picture>
               <div class="team-padding">
                 <h3 class="team-item-title">Николай Тарасов</h3>
                 <p lang="en" class="team-text">Marketing</p>
@@ -328,7 +410,30 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img-7.jpg" alt="Наша команда-4" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/dekstop-team-4-1x.jpg 1x,
+                    ./images/dekstop-team-4-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-team-4-1x.jpg 1x,
+                    ./images/tablet-team-4-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobil-team-4-1x.jpg 1x,
+                    ./images/mobil-team-4-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/img-7.jpg" alt="Наша команда-4" />
+              </picture>
               <div class="team-padding">
                 <h3 class="team-item-title">Михаил Ермаков</h3>
                 <p lang="en" class="team-text">UI Designer</p>
