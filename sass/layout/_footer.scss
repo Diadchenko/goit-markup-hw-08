@@ -144,6 +144,9 @@
 
   margin-bottom: 20px;
   margin-top: 60px;
+  @include desktop {
+    margin-top: 0;
+  }
 }
 
 .footer-input {

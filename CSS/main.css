@@ -122,6 +122,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header__logo span {
@@ -480,7 +482,14 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  text-align: center;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 767px) {
+  .about-item-title {
+    text-align: start;
+  }
 }
 
 .about-item-text {
@@ -959,6 +968,12 @@ body {
   color: #ffffff;
   margin-bottom: 20px;
   margin-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input-title {
+    margin-top: 0;
+  }
 }
 
 .footer-input {
