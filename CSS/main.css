@@ -388,6 +388,14 @@ body {
   overflow: hidden;
 }
 
+.fb {
+  fill: #2196f3;
+}
+
+.fb:hover {
+  fill: yellow;
+}
+
 .hero {
   background-color: #2f303a;
   padding-top: 118px;
